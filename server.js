@@ -20,7 +20,7 @@ router.post('/posts', function(req,res) {
     //Create an object with the query and header info
     var postRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
 
-    if(Object.keys(req.query).length == 0) {
+    if(Object.keys(req.query).length === 0) {
         res.status(400).send("The query was empty");
     }
     else {
@@ -29,6 +29,23 @@ router.post('/posts', function(req,res) {
 
 });
 
+router.get('/gets', function(req,res) {
+    //Create an object with the query and header info
+    var getRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+});
+
+router.put('/puts', function(req,res) {
+    //Create an object with the query and header info
+    var putRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+});
+
+router.delete('/deletes', function(req,res) {
+
+    //need to add Basic Auth
+    
+    //Create an object with the query and header info
+    var deleteRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+});
 /*
 router.route('/postjwt')
     .post(authJwtController.isAuthenticated, function (req, res) {
