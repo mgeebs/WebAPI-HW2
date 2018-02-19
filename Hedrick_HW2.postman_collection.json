@@ -1,0 +1,230 @@
+{
+	"id": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+	"name": "HW2",
+	"description": "",
+	"order": [
+		"764c47e5-3afb-c036-c86b-2dd1e622f767",
+		"7b5e42d0-32d8-10da-55fe-5d28f6e35849",
+		"a38bc5f0-865f-3b7d-ab4b-32e55d69e8b5",
+		"40ca4e9d-edf7-ae1f-3b6f-019a1b48919b",
+		"b4629788-525d-5039-0cf2-27c06bd6249d",
+		"d6ae0019-aa52-002a-74ff-5da9a75d57e1"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "3599339",
+	"public": false,
+	"events": null,
+	"variables": null,
+	"auth": null,
+	"requests": [
+		{
+			"id": "40ca4e9d-edf7-ae1f-3b6f-019a1b48919b",
+			"headers": "",
+			"headerData": [],
+			"url": "https://still-anchorage-94962.herokuapp.com/deletes?q={{$timestamp}}",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{$timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "12345",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "hedrickm",
+						"type": "string"
+					}
+				]
+			},
+			"method": "DELETE",
+			"collectionId": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+			"data": null,
+			"dataMode": "params",
+			"name": "delete test ",
+			"description": "This test shows that the delete route responds with the appropriate data.  The delete route also uses passport with a basic auth strategy.  An unauthorized attempt it shown in another test.  The query is the current time stamp.",
+			"descriptionFormat": "html",
+			"time": 1519081473360,
+			"version": 2,
+			"responses": [],
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "hedrickm",
+				"password": "12345"
+			}
+		},
+		{
+			"id": "764c47e5-3afb-c036-c86b-2dd1e622f767",
+			"headers": "",
+			"headerData": [],
+			"url": "https://still-anchorage-94962.herokuapp.com/gets?q={{$timestamp}}",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{$timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1519081271026,
+			"name": "get test ",
+			"description": "This test shows that the get route responds with the appropriate data.  The query is the current time stamp.",
+			"collectionId": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7b5e42d0-32d8-10da-55fe-5d28f6e35849",
+			"headers": "",
+			"headerData": [],
+			"url": "https://still-anchorage-94962.herokuapp.com/posts?q={{$timestamp}}",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{$timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+			"data": null,
+			"dataMode": "params",
+			"name": "post test ",
+			"description": "This test shows that the post route responds with the appropriate data.  The query is the current time stamp.",
+			"descriptionFormat": "html",
+			"time": 1519081357008,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a38bc5f0-865f-3b7d-ab4b-32e55d69e8b5",
+			"headers": "",
+			"headerData": [],
+			"url": "https://still-anchorage-94962.herokuapp.com/puts?q={{$timestamp}}",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{$timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "PUT",
+			"collectionId": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+			"data": null,
+			"dataMode": "params",
+			"name": "put test ",
+			"description": "This test shows that the put route responds with the appropriate data.  The query is the current time stamp.",
+			"descriptionFormat": "html",
+			"time": 1519081386708,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "b4629788-525d-5039-0cf2-27c06bd6249d",
+			"headers": "",
+			"headerData": [],
+			"url": "https://still-anchorage-94962.herokuapp.com/deletes?q={{$timestamp}}",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{$timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": {
+				"type": "noauth"
+			},
+			"method": "DELETE",
+			"collectionId": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+			"data": null,
+			"dataMode": "params",
+			"name": "unauthorized delete",
+			"description": "This test shows an unauthorized delete request",
+			"descriptionFormat": "html",
+			"time": 1519081877154,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "d6ae0019-aa52-002a-74ff-5da9a75d57e1",
+			"headers": "",
+			"headerData": [],
+			"url": "https://still-anchorage-94962.herokuapp.com/posts?q={{$timestamp}}",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "{{$timestamp}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": {
+				"type": "noauth"
+			},
+			"method": "GET",
+			"collectionId": "0d61fbf2-edb2-c190-97f7-1518c92a6b8c",
+			"data": null,
+			"dataMode": "params",
+			"name": "incorrect route test",
+			"description": "This test shows a request that is denied because it is sent to the wrong route.  A POST request is send to the GET route and is denied by the server.",
+			"descriptionFormat": "html",
+			"time": 1519082043569,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}
