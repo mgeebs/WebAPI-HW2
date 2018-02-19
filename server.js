@@ -3,10 +3,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var authController = require('./auth');
-var http = require('http');
-//var authJwtController = require('./auth_jwt');
-//db = require('./db')(); //global hack
-//var jwt = require('jsonwebtoken');
+//var http = require('http');
 var app = express();
 var uniqueKey = process.env.UNIQUE_KEY;
 app.use(bodyParser.json());
@@ -17,34 +14,34 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var router = express.Router();
 
 router.post('/posts', function(req,res) {
-    //Create an object with the query and header info
-    var postRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+    //Create an object containing the query, header, and environment variable
+    var postObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
 
     if(Object.keys(req.query).length === 0) {
         res.status(400).send("The query was empty");
     }
     else {
-        res.status(200).send(postRequest); //send the query and headers in a response
+        res.status(200).send(postObject); //send the query and headers in a response
     }
 
 });
 
 router.get('/gets', function(req,res) {
-    //Create an object with the query and header info
-    var getRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+    //Create an object containing the query, header, and environment variable
+    var getObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
 });
 
 router.put('/puts', function(req,res) {
-    //Create an object with the query and header info
-    var putRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+    //Create an object containing the query, header, and environment variable
+    var putObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
 });
 
 router.delete('/deletes', function(req,res) {
 
     //need to add Basic Auth
-    
-    //Create an object with the query and header info
-    var deleteRequest = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+
+    //Create an object containing the query, header, and environment variable
+    var deleteObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
 });
 /*
 router.route('/postjwt')

@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shawn McCarthy",
-  "license": "ISC",
+  "author": "Michael Hedrick",
+  "license": "UCD",
   "dependencies": {
     "auth": "0.0.9",
     "body-parser": "^1.18.2",
