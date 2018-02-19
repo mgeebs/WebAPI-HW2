@@ -21,7 +21,7 @@ router.post('/posts', function(req,res) {
         res.status(400).send("The query was empty");
     }
     else {
-        res.status(200).send(postObject); //send the query and headers in a response
+        res.status(200).send(postObject); //send the query and headers back in a response
     }
 
 });
@@ -29,11 +29,25 @@ router.post('/posts', function(req,res) {
 router.get('/gets', function(req,res) {
     //Create an object containing the query, header, and environment variable
     var getObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+
+    if(Object.keys(req.query).length === 0) {
+        res.status(400).send("The query was empty");
+    }
+    else {
+        res.status(200).send(postObject); //send the query and headers back in a response
+    }
 });
 
 router.put('/puts', function(req,res) {
     //Create an object containing the query, header, and environment variable
     var putObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+
+    if(Object.keys(req.query).length === 0) {
+        res.status(400).send("The query was empty");
+    }
+    else {
+        res.status(200).send(postObject); //send the query and headers back in a response
+    }
 });
 
 router.delete('/deletes', function(req,res) {
@@ -42,6 +56,13 @@ router.delete('/deletes', function(req,res) {
 
     //Create an object containing the query, header, and environment variable
     var deleteObject = {query: req.query, headers: req.headers, unique_key: uniqueKey}
+
+    if(Object.keys(req.query).length === 0) {
+        res.status(400).send("The query was empty");
+    }
+    else {
+        res.status(200).send(postObject); //send the query and headers back in a response
+    }
 });
 /*
 router.route('/postjwt')
