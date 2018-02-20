@@ -27,20 +27,32 @@
 			"headerData": [],
 			"url": "https://still-anchorage-94962.herokuapp.com/gets",
 			"queryParams": [],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02a45a6a-c129-41a2-a49b-1cbe64e1bbbe",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 400 (bad request)\"] = (responseCode.code === 400);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
-			"auth": null,
 			"method": "GET",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1519091520629,
 			"name": "empty query get test ",
 			"description": "This test shows an empty request responding appropriately. ",
-			"descriptionFormat": "html",
-			"time": 1519083123099,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
+			"preRequestScript": null,
+			"tests": "tests[\"response code 400 (bad request)\"] = (responseCode.code === 400);",
 			"currentHelper": null,
 			"helperAttributes": null
 		},
@@ -58,21 +70,32 @@
 					"enabled": true
 				}
 			],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65afbecf-4d84-449a-922e-0aa5d858486b",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 200 (ok)\"] = (responseCode.code === 200);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
-			"auth": null,
 			"method": "POST",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1519091363735,
 			"name": "post test ",
 			"description": "This test shows that the post route responds with the appropriate data.  The query is the current time stamp.",
-			"descriptionFormat": "html",
-			"time": 1519081357008,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
-			"collection_id": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
+			"preRequestScript": null,
+			"tests": "tests[\"response code 200 (ok)\"] = (responseCode.code === 200);",
 			"currentHelper": null,
 			"helperAttributes": null
 		},
@@ -90,21 +113,32 @@
 					"enabled": true
 				}
 			],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e2732267-7523-41df-9bca-2fc0505945e1",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 200 (ok)\"] = (responseCode.code === 200);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
-			"auth": null,
 			"method": "PUT",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1519091367829,
 			"name": "put test ",
 			"description": "This test shows that the put route responds with the appropriate data.  The query is the current time stamp.",
-			"descriptionFormat": "html",
-			"time": 1519081386708,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
-			"collection_id": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
+			"preRequestScript": null,
+			"tests": "tests[\"response code 200 (ok)\"] = (responseCode.code === 200);",
 			"currentHelper": null,
 			"helperAttributes": null
 		},
@@ -122,9 +156,24 @@
 					"enabled": true
 				}
 			],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "263529c8-6ee8-42e2-a3c3-0613f7ace5ec",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 200 (ok)\"] = (responseCode.code === 200);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
 			"auth": {
 				"type": "basic",
 				"basic": [
@@ -140,17 +189,13 @@
 					}
 				]
 			},
-			"method": "DELETE",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
-			"data": null,
-			"dataMode": "params",
+			"time": 1519091371424,
 			"name": "delete test ",
 			"description": "This test shows that the delete route responds with the appropriate data.  The delete route also uses passport with a basic auth strategy.  An unauthorized attempt it shown in another test.  The query is the current time stamp.",
-			"descriptionFormat": "html",
-			"time": 1519081473360,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
-			"collection_id": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
+			"preRequestScript": null,
+			"tests": "tests[\"response code 200 (ok)\"] = (responseCode.code === 200);",
 			"currentHelper": "basicAuth",
 			"helperAttributes": {
 				"id": "basic",
@@ -172,23 +217,34 @@
 					"enabled": true
 				}
 			],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "213d92c8-6f82-4bbe-846b-13491cb7c9e8",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 404 (not found)\"] = (responseCode.code === 404);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
 			"auth": {
 				"type": "noauth"
 			},
-			"method": "GET",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
-			"data": null,
-			"dataMode": "params",
+			"time": 1519091657030,
 			"name": "incorrect route test",
 			"description": "This test shows a request that is denied because it is sent to the wrong route.  A POST request is send to the GET route and is denied by the server.",
-			"descriptionFormat": "html",
-			"time": 1519082043569,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
-			"collection_id": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
+			"preRequestScript": null,
+			"tests": "tests[\"response code 404 (not found)\"] = (responseCode.code === 404);",
 			"currentHelper": null,
 			"helperAttributes": null
 		},
@@ -206,23 +262,34 @@
 					"enabled": true
 				}
 			],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5e3aad1d-615c-4c65-b139-a4f79671ebb6",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 401 (unauthorized)\"] = (responseCode.code === 401);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
 			"auth": {
 				"type": "noauth"
 			},
-			"method": "DELETE",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
-			"data": null,
-			"dataMode": "params",
+			"time": 1519091526255,
 			"name": "unauthorized delete",
 			"description": "This test shows an unauthorized delete request",
-			"descriptionFormat": "html",
-			"time": 1519081877154,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
-			"collection_id": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
+			"preRequestScript": null,
+			"tests": "tests[\"response code 401 (unauthorized)\"] = (responseCode.code === 401);",
 			"currentHelper": null,
 			"helperAttributes": null
 		},
@@ -232,20 +299,32 @@
 			"headerData": [],
 			"url": "https://still-anchorage-94962.herokuapp.com/puts",
 			"queryParams": [],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "997a8b31-9344-40b6-8ed8-29aad52c341c",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code 400 (bad request)\"] = (responseCode.code === 400);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
-			"events": [],
-			"auth": null,
 			"method": "PUT",
-			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1519091518274,
 			"name": "empty query put test ",
 			"description": "This test shows an empty request responding appropriately. ",
-			"descriptionFormat": "html",
-			"time": 1519083144574,
-			"version": 2,
+			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
+			"preRequestScript": null,
+			"tests": "tests[\"response code 400 (bad request)\"] = (responseCode.code === 400);",
 			"currentHelper": null,
 			"helperAttributes": null
 		},
@@ -263,7 +342,18 @@
 					"enabled": true
 				}
 			],
-			"events": [],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5ac59527-8237-479d-a51b-fb3239cca171",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Response code 200 (ok)\"] = (responseCode.code === 200);"
+						]
+					}
+				}
+			],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"method": "GET",
@@ -271,12 +361,13 @@
 			"dataMode": "params",
 			"version": 2,
 			"auth": null,
-			"time": 1519081271026,
+			"time": 1519091360880,
 			"name": "get test ",
 			"description": "This test shows that the get route responds with the appropriate data.  The query is the current time stamp.",
 			"collectionId": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
 			"responses": [],
-			"collection_id": "2a387df4-ead1-e831-7fcd-0d0eddfb2cf0",
+			"preRequestScript": null,
+			"tests": "tests[\"Response code 200 (ok)\"] = (responseCode.code === 200);",
 			"currentHelper": null,
 			"helperAttributes": null
 		}
